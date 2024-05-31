@@ -14,10 +14,10 @@ const ContactList = () => {
 
   return (
     <ul className={styles.list}>
-      {filteredContacts.map(({ name, number, id }) => (
+      {filteredContacts.map(({ name, phone, id }) => (
         <li className={styles.item} key={id}>
           <p>
-            {name}: {number}
+            {name}: {phone}
           </p>
 
           <button
